@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Maze Game!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mazeTiles.css">
+    <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.js"></script>
+  </head>
+  <body>
+    <h1>The Great Maze Game!</h1>
+    <p>Use your arrow keys to navigate your character through the maze.</p>
+    <!-- <button id="dimensions-down" type="button" name="button">V</button><span id="dimensions">20</span><button id="dimensions-up" type="button" name="button">^</button> -->
+    <button id="mode-button" type="button" name="button">Edit Maze</button>
+    <button id="place-begin" class="hidden" type="button" name="button">Place Beginning</button>
+    <button id="place-end" class="hidden" type="button" name="button">Place End</button>
+    <div id="maze-code-div" class="hidden">
+      <textarea rows="5" cols="20"></textarea>
+      <button id="set-maze-code" type="button" name="button">Set Maze Code</button>
+      <button id="get-maze-code" type="button" name="button">Get Maze Code</button>
+    </div>
+
+    <div class="maze-container">
+      <div class="maze-row row1">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row2">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row3">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row4">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row5">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row6">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row7">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row8">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row9">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+
+      <div class="maze-row row10">
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+        <div class="maze-square"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/mazeInit.js"></script>
+    <script type="text/javascript" src="assets/js/mazeControl.js"></script>
+    <script type="text/javascript" src="assets/js/mazeEdit.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.maze-wall {
+  background-color: #ffaa00;
+}
+
+.maze-begin {
+  background-color: #0c6822;
+}
+
+.maze-end {
+  background-color: #db1900;
+}
+
+.player-tile {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}

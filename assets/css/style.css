@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+}
+
+button {
+  margin-bottom: 25px;
+}
+
+.maze-container {
+  box-sizing: border-box;
+  width: 40%;
+  height: 100px;
+  margin: auto;
+  border: 1px solid #707070;
+}
+
+.maze-row {
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+}
+
+.maze-square {
+  width: 10%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #bababa;
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
